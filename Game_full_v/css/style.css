@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+
+header {
+    background-color: #ccc;    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerimage{
+    background-image: url(https://mcdn.wallpapersafari.com/medium/27/60/GM3m4R.jpg);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: url("https://thumbs.dreamstime.com/z/muster-des-kinderspiels-schere-stein-papier-134992609.jpg")
+}
+
+
+
+.button {
+    background-color: #777;
+    color: #fff;
+    display: inline-block;
+    margin:20px;
+    padding: 10px;
+    
+
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+
+#startScreen{
+    justify-content: center;
+}
+
+
+.screen{
+    display: none;
+    box-shadow: 1px 1px 10px #777;
+    padding: 40px;
+    text-align: center;
+    background-color:white;
+
+}
+
+.screen.active{
+    display:block;
+}
+
+
+
+.button.nonActive{
+    display: none;
+}
+
+.button.activeBrah{
+    display: inline-block;
+}
+
+
+#waffen {
+    font-size: 5rem;
+
+}
+
+#waffen:hover{
+    cursor: pointer;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+
+  .main {
+    margin-top: 30px; 
+  }

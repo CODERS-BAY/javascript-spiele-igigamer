@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    color: #fff;
+    background-color: purple;
+    display: table; /* so groß wie der Inhalt */
+    margin: 20px auto 0;
+    padding: 10px;
+}
+
+.button:hover, .button.active {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button.accordion {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.accordion_text {
+    display: none;
+}
+
+body > div:not(:first-child) {
+    display: none;
+}
+
+body > div {
+    box-shadow: 1px 1px 10px #777;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.redBox {
+    background-color: red;
+    height: 100px;
+    margin: 10px;
+    width: 100px;
+}

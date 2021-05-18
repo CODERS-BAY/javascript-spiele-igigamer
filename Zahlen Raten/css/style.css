@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: url("https://static.vecteezy.com/ti/gratis-vektor/p1/151795-flur-matrix-hintergrund-kostenlos-vektor.jpg");
+    background-size: cover;
+}
+
+.button {
+    background-color: #777;
+    color: #fff;
+    display: inline-block;
+    margin:20px;
+    padding: 10px;
+    
+
+}
+
+
+
+
+
+
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+
+#startScreen{
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: darkgreen;
+    
+}
+
+
+.screen{
+    display: none;
+    box-shadow: 1px 1px 10px #777;
+    padding: 80px;
+    text-align: center;
+    background-color: darkgreen;
+}
+
+.screen.active{
+    display:block;
+}
+
+
+
+.button.nonActive{
+    display: none;
+}
+
+.button.activeBrah{
+    display: inline-block;
+}
+
+
+#codeEingabe > div{
+    display: flex;
+}
+
+
+#numPad>  hover{
+    cursor: pointer;
+}
+
+
+
+#numPad > button{
+    box-shadow: 1px 1px 10px #777;
+    padding: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.number:hover{
+    cursor: pointer;
+}

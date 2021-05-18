@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="utf-8">
+        <title> Hunde </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       
+        <div id="screen1" class="screen">
+            <label>Wie oft möchtest du spielen?</label>
+            <input id="counterInput" type="number" min="1" />
+            <button onclick="addCounter()">Counter einlesen</button>
+
+        </div>
+
+
+
+        <div id="screen2" class="screen hidden">
+            <h2>Das HundeSpiel</h2>
+                
+            <div>
+                <h5>User <br/>
+                    <span id="userCounterContainer">0</span>
+                </h5>
+                <img id="userChoiceImg" src="images/muster.jpg" alt="Users Choice"/>
+                <h5>PC</br>
+                    <span id="pcCounterContainer">0</span>
+                </h5>
+                <img id="pcChoiceImg" src="images/muster.jpg" alt="PC Choice"/>
+
+
+            </div>
+            <div>
+                <img src="images/hund1.jpg" alt="Hund 1" onclick="play(1)"/>
+                <img src="images/hund2.jpg" alt="Hund 1" onclick="play(2)"/>
+                <img src="images/hund3.jpg" alt="Hund 1" onclick="play(3)"/>
+                <img src="images/hund4.jpg" alt="Hund 1" onclick="play(4)"/>
+
+            </div>
+
+        </div>
+
+
+
+
+        <script src="js/lib.js" type = "text/javascript"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

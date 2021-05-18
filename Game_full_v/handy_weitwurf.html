@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="utf-8">
+        <title> Wurfspiel </title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/ha.css" />
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a href="code_breaker.html">Codebreaker</a>
+            <a href="zahlen_raten.html">Zahlenraten</a>
+            <a href="handy_weitwurf.html">Handyweitwurf</a>
+            <a href="sch_st_pa.html">Schere Stein Papier</a>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id="startScreen" class="screen active">
+            <h2>Startscreen</h2>
+            <p>Triff das Monster mit dem Handy</p>
+
+            <label>Wie oft möchtest du spielen?</label>
+            <input type="number" id="triesCounterId" name="triesCounter">
+
+            
+            
+            <div></div>
+            
+            <button class="button" onclick="playScreen()">Weiter</button>
+        </div>
+
+
+
+        <div id="gameScreen" class="screen" >
+
+            <h2>SPIEL</h2>
+            
+            <p>Wähle deinen Planeten aus</p>
+
+
+
+            <select id="planetSelect">
+                <option value="9.81">Erde</option>
+                <option value="1.62">Mond</option>
+                <option value="3.69">Mars</option>
+                <option value="24.79">Jupiter</option>
+            </select>
+            <br><br><br>
+
+            <input type="text" id="kraft" name="Kraft" placeholder="Gib die Kraft ein"> <br><br><br>
+            <input type="text" id="derWinkel" name="Winkel" placeholder="Gib den Winkel ein">
+
+
+            <p id="loesung" >-</p>
+            <p id="versuche">-</p>
+
+            <button onclick="playGame()">Spielen</button>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="js\handyweitwurf.js"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+    background-image: url("https://thumbs.dreamstime.com/z/muster-des-kinderspiels-schere-stein-papier-134992609.jpg")
+}
+
+
+
+.button {
+    background-color: #777;
+    color: #fff;
+    display: inline-block;
+    margin:20px;
+    padding: 10px;
+    
+
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
+
+
+#startScreen{
+    justify-content: center;
+}
+
+
+.screen{
+    display: none;
+    box-shadow: 1px 1px 10px #777;
+    padding: 40px;
+    text-align: center;
+    background-color:white;
+
+}
+
+.screen.active{
+    display:block;
+}
+
+
+
+.button.nonActive{
+    display: none;
+}
+
+.button.activeBrah{
+    display: inline-block;
+}
+
+
+#waffen {
+    font-size: 5rem;
+
+}
+
+#waffen:hover{
+    cursor: pointer;
+}
+
+

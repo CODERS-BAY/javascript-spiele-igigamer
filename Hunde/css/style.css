@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+
+body, html {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height:100vh;
+}
+
+
+.screen{
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 1px 10px #777;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.screen.hidden{
+    display:none;
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="utf-8">
+        <title>Code Breaker</title>
+
+        <link rel="stylesheet" href="css/all.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body>
+   
+   
+   
+        <div id="startScreen" class="screen active">
+            <h2>Startscreen</h2>
+            <p>Wie viele versuche traust du dir zu?</p>
+
+            <input type="number" id="triesCounterId" name="triesCounter">
+
+            
+
+            <div>
+            <div class="button" onclick="playScreen()">Spielen</div>
+            </div>
+        
+        </div>
+
+
+
+        <div id="gameScreen" class="screen">
+
+            <h2>SPIEL</h2>
+            
+            <p>Knacke den Code:</p>
+
+
+            <button id="codeEingabe">
+                
+                <div>
+                <div id="user123">*</div>
+                <div id="user234">*</div>
+                <div id="user345">*</div>
+                </div>   
+            
+            
+            </button>
+
+
+
+            <div id="numPad">
+
+            <div class="firstRaw">
+            <button class="number" value=1 onclick="playGame(1)">1</button>
+            <button class="number" value=2 onclick="playGame(2)">2</button>
+            <button class="number" value=3 onclick="playGame(3)">3</button>
+            </div>
+
+            <div class="secondRaw">
+            <button class="number" value=4 onclick="playGame(4)">4</button>
+            <button class="number" value=5 onclick="playGame(5)">5</button>
+            <button class="number" value=6 onclick="playGame(6)">6</button>
+            </div>
+
+
+            <div>
+            <button class="number" value=7 onclick="playGame(7)">7</button>
+            <button class="number" value=8 onclick="playGame(8)">8</button>
+            <button class="number" value=9 onclick="playGame(9)">9</button>
+            </div>
+            
+            </div>
+
+
+            
+
+            <div id="gameScore">
+                <p></p>
+            </div>
+
+            <div id="brah" class="button nonActive" onclick="location.href='index.html'">Try again</div>
+
+        </div>
+
+
+
+
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
